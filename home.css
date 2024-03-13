@@ -23,8 +23,9 @@
     z-index: 999;
 }
 
-.navbar a:active{
+.navbar a:hover, .link-active{
     color: #dc3545;
+    border-bottom:1px solid #dc3545 ;
 }
 
 /*partie acceuil*/
@@ -121,6 +122,8 @@ pre{
     list-style: none;
 }
 
+
+
 .parcours .qualities {
     display: flex;
     flex-wrap: wrap; /* Force le retour à la ligne des éléments */
@@ -134,9 +137,10 @@ pre{
     padding: 5px;
   }
   
-  .parcours  .quality:hover{
-    background-color: #dc3546;
-    transition: all 1.5s;
+  .parcours  .quality:hover,.accordion-article-item:hover,.parcours .col-sm-6:hover,.contact a:hover,.card:hover{
+    background-color: #60000a;
+    transition: all 1s;
+    color: #ffffff;
   }
 
 
@@ -150,10 +154,7 @@ pre{
     min-width: 250px;
 }
 
-.parcours .col-sm-6:hover{
-    background-color: #dc3546;
-    transition: all 1.5s;
-}
+
 
 
 
@@ -174,11 +175,6 @@ pre{
     background-color: white;
 }
 
-/* Effet hover sur les liens */
-.contact a:hover {
-    background-color: #dc3546;
-    transition: all 1.5s;
-}
 
 /* Style pour les images à l'intérieur des liens */
 .contact a img {

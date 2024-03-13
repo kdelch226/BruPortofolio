@@ -19,7 +19,7 @@
 
             // Si l'élément est visible, changez la couleur du lien, sinon revenez à la couleur par défaut
             if (isInView) {
-                lien.style.color = 'red'; // Changez la couleur comme vous le souhaitez
+                lien.classList.add('.link-active'); // Changez la couleur comme vous le souhaitez
             } else {
                 lien.style.color = 'black'; // Couleur par défaut
             }

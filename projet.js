@@ -432,7 +432,7 @@ window.addEventListener("load", function () {
     let projectId = creatid(project.id);
 
     let projectCard = document.createElement('div');
-    projectCard.classList.add('card', 'text-center', 'shadow', 'mx-3', 'col-lg-4', 'col-md-6', 'mb-5');
+    projectCard.classList.add('card', 'text-center', 'shadow', 'mx-3', 'col-lg-6', 'col-md-6', 'mb-5');
 
     let cardBody = document.createElement('div');
     cardBody.classList.add('card-body');
@@ -489,7 +489,7 @@ window.addEventListener("load", function () {
 
     let modalHeader = document.createElement('div');
     modalHeader.classList.add('modal-header');
-    modalHeader.innerHTML = '<h5 class="modal-title">Titre du Projet</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>';
+    modalHeader.innerHTML = '<h5 class="modal-title">'+project.name+'</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>';
 
     let modalBody = document.createElement('div');
     modalBody.classList.add('modal-body');
@@ -507,7 +507,7 @@ window.addEventListener("load", function () {
     /** creation des representation de technologie pour le modal*/
     project.tech.forEach(tech => {
       let techElement = document.createElement('div');
-      techElement.classList.add('tech', 'mb-1');
+      techElement.classList.add('tech', 'mb-1','me-2');
       techElement.style.backgroundColor = tech.color;
       techElement.textContent = tech.key;
       techContainermodal.appendChild(techElement);
