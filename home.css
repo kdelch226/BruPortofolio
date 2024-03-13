@@ -1,0 +1,209 @@
+/* Définition d'une taille de police de base pour tous les éléments */
+* {
+    font-size: 1em;
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    /* Position fixe pour que la barre de navigation reste en haut de la page lors du défilement */
+    position: fixed;
+    /* Largeur de la barre de navigation sur toute la largeur de la fenêtre */
+    width: 100%;
+    /* Flexbox pour aligner les éléments horizontalement */
+    display: flex;
+    /* Répartition égale des éléments sur la ligne */
+    justify-content: space-between;
+    /* Alignement vertical au centre */
+    align-items: center;
+    /* Durée de transition pour les animations */
+    transition: 0.5s;
+    /* Positionnement en haut de la page */
+    top: 0;
+    /* Empilement au-dessus des autres éléments */
+    z-index: 999;
+}
+
+.navbar a:active{
+    color: #dc3545;
+}
+
+/*partie acceuil*/
+/* Styles pour les images de profil */
+.acceuil .rounded-photo {
+    padding-top: 5px;
+    margin: 20px;
+    width: 250px;
+    border-radius: 50%;
+    overflow: hidden; /* Masque tout contenu débordant */
+    background-color: #8a8a8a; /* Couleur de fond en cas d'image absente */
+}
+
+/* Styles pour les colonnes */
+.acceuil .col {
+    border-radius: 10px; /* Bordures arrondies */
+}
+
+/* Styles pour le conteneur fluide */
+.acceuil .container-fluid {
+    background-image: url(../../assets/homeGreen.jpg); /* Image de fond */
+    background-size: cover; /* Redimensionnement de l'image pour couvrir tout le conteneur */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    width: 100%; /* Largeur égale à 100% de la largeur de la fenêtre */
+    height: 40vw; /* Hauteur égale à 40% de la largeur de la fenêtre */
+    max-height: 400px; /* Hauteur maximale de 400 pixels */
+    min-height: 300px; /* Hauteur minimale de 300 pixels */
+    display: flex; /* Utilisation de flexbox pour aligner le contenu */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    color: aliceblue; /* Couleur du texte */
+}
+
+/*style pour projet recent*/
+.projrecent img{
+    display: block;
+    width: 100%; 
+    max-height: 356px;
+}
+
+
+
+/*---------------------------------------------------------------------------*/
+/*page de realisation*/
+.tech{
+    border-radius: 25px;
+    color: #ffffff;
+    line-height: 30px;
+    width: fit-content;
+    height: 30px;
+    padding: 0 15px;
+}
+.card-title{
+font-weight: bold;
+}
+
+.card{
+    max-width: 380px;
+    min-width: 380px;
+}
+
+pre{
+    white-space: pre-wrap; /* Activer le retour à la ligne automatique */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/*page de parcours*/
+
+.accordion-header button {
+    background-color: rgb(237, 237, 237);
+    max-height: 80px;
+    height: 10vw;
+    min-height: 50px;
+}
+
+.parcours .container-fluid{
+    display: flex;
+    max-width: 80vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.parcours .container-fluid img{
+    width: 40%;
+    height: 40%;
+    max-width: 250px;
+    max-height: 200px;
+}
+
+.parcours li {
+    list-style: none;
+}
+
+.parcours .qualities {
+    display: flex;
+    flex-wrap: wrap; /* Force le retour à la ligne des éléments */
+  }
+  
+  .parcours  .quality {
+    margin-right: 10px; /* Espacement horizontal entre chaque élément */
+    margin-bottom: 10px; /* Espacement vertical entre chaque élément */
+    border: 1px solid black;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 5px;
+  }
+  
+  .parcours  .quality:hover{
+    background-color: rgb(0, 34, 255);
+  }
+
+
+  .parcours .col-sm-6{
+    margin-right: 10px; /* Espacement horizontal entre chaque élément */
+    margin-bottom: 10px; /* Espacement vertical entre chaque élément */
+    border: 1px solid black;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 5px;
+    max-width: 30%;
+    min-width: 250px;
+}
+
+
+/*page de contact*/
+/* Style pour les liens */
+.contact a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+/* Effet hover sur les liens */
+.contact a:hover {
+    background-color: #dc3545;
+}
+
+/* Style pour les images à l'intérieur des liens */
+.contact a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Style pour les illustrations */
+.contact .illus {
+    width: 350px;
+    height: 250px;
+}
+
+/* Style pour les colonnes */
+.contact .col {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style pour les rangées */
+.contact .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style spécifique pour la section de contact */
+.contact #contactcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+

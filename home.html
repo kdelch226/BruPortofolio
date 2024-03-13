@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>BrunelCV</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/x-icon" href="/assets/iconecv.ico">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light text-center p-3">
+            <div class="container">
+
+                <!-- Marque de navigation -->
+                <a class="navbar-brand"><strong>BrunelCV</strong></a>
+
+                <!-- Bouton de bascule pour les petits écrans -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Contenu de la barre de navigation -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Liens de navigation -->
+                        <li class="nav-item">
+                            <a id="acceuilLink" class="nav-link" href="#acceuil">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="realisationsLink" class="nav-link" href="#projets">Realisations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="parcoursLink" class="nav-link" href="#parcours">Parcours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="contactLink" class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+        <!--partie dacceuil-->
+        <section class="acceuil" id="acceuil">
+            <div class="container-fluid text-center">
+                <!-- Contenu principal -->
+                <div class="contenu" style="margin-top: 7em;">
+                    <!-- Bannière de texte -->
+                    <div class="banniere_text">
+                        <div class="text-center">
+                            <!-- Titre principal -->
+                            <h1>Kompoare Brunel Delchamp</h1>
+                            <!-- Sous-titre -->
+                            <h3>Nouveau diplômé en Informatique</h3>
+                        </div>
+                        <!-- Boutons -->
+                        <div class="mb-3 mt-3">
+                            <!-- Bouton de téléchargement du CV -->
+                            <a href="assets/Brunel-Cv.pdf" target="_blank" class="btn btn-danger m-2"
+                                style="border-radius: 15px; font-weight: bold;">
+                                Mon CV <img src="../../assets/telecharger.png" alt="" style="width: 18px;height: 15px;">
+                            </a>
+                            <!-- Bouton de contact -->
+                            <a class="btn btn-info m-2" style="border-radius: 15px;" href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <!-- Colonne 1 -->
+                    <div class="col-lg shadow border m-1 mx-3 mt-3"
+                        style="max-width: 690px;background-color: rgb(241, 241, 241); min-width: 200px;">
+                        <!-- Contenu de la première colonne -->
+                        <div class="text-center">
+                            <!-- Titre de la section -->
+                            <h1>Qui suis<span class="text-danger">je ?</span></h1>
+                            <!-- Image de profil -->
+                            <img src="/assets/monprofil.png" alt="Photo de profil" width="216px" height="256px"
+                                class="rounded-photo">
+                            <!-- Description -->
+                            <p>Je suis un nouveau diplômé recherchant de nouvelles opportunités professionnelles.<br>Mes
+                                compétences en résolution de problèmes, programmation, gestion de projets et ma capacité
+                                à travailler en équipe font de moi un candidat polyvalent et motivé.</p>
+                            <!-- Bouton d'action -->
+                            <div class="portofolio-action mb-3 mt-3">
+                                <a class="btn btn-outline-danger m-2" style="border-radius: 15px;" href="#parcours">Mon
+                                    parcours</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colonne 2 -->
+                    <div class="col-md text-center shadow border m-1 mx-3 mt-3"
+                        style="max-width: 690px;background-color: rgb(241, 241, 241); min-width: 200px;">
+                        <!-- Contenu de la deuxième colonne -->
+                        <div class="text-center projrecent" id="projetrecent">
+
+                        </div>
+                        <!-- Bouton pour voir plus de réalisations -->
+                        <h4>Consultez mes réalisations pour plus de détails</h4>
+                        <a href="#projets" class="btn btn-danger mb-4">Réalisations</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--partie projet-->
+        <section id="projets" class="container-fluid" style="padding-top: 10em;">
+            <h2 class="text-center" style="font-weight: bold;">Explorez Mes Projets Passionnants</h2>
+
+            <div id="projectscontainer" class="row d-flex justify-content-center mt-5"></div>
+
+        </section>
+
+
+
+
+
+
+
+    <!-- Partie parcours -->
+    <section class="parcours" id="parcours" style="padding-top: 10em;">
+        <h2 class="text-center mb-5" style="font-weight: bold;">Découvrez mon parcours</h2>
+        <!-- Section contenant les images en haut de la page -->
+        <div class="container-fluid">
+            <img src="../../assets/parcours1.png" alt="">
+            <img src="../../assets/parcours2.png" alt="">
+            <img src="../../assets/parcours3.png" alt="">
+        </div>
+  
+        <!-- Section principale contenant les informations sur l'éducation, l'expérience professionnelle, les compétences et les qualités -->
+        <div class="container text-center mt-5 mb-5" style="max-width: 1000px;">
+            <!-- Utilisation de l'élément Accordion pour organiser les différentes sections -->
+            <div class="accordion" id="accordionExample">
+                <!-- Section for education -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Éducation
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div style="text-align: left;">
+                                <div style="text-align: left;" class="m-3 text-center border shadow-sm">
+                                    <h2 class="mb-0">Baccalauréat en Informatique</h2>
+                                    <h3 class="text-primary">Université du Québec en Outaouais (UQO)</h3>
+                                    <h4>Janvier 2020 - Avril 2023</h4>
+                                </div>
+
+                                <div style="text-align: left;" class="m-3 text-center border shadow-sm">
+                                    <h2 class="mb-0">Certificat : angular</h2>
+                                    <h3 class="text-primary mb-">OpenClassrooms</h3>
+                                </div>
+
+                                <div style="text-align: left;" class="m-3 text-center border shadow-sm">
+                                    <h2 class="mb-0">Certificat : conception base de données relationnelles</h2>
+                                    <h3 class="text-primary mb-">OpenClassrooms</h3>
+                                </div>
+
+                                <div style="text-align: left;" class="m-3 text-center border shadow-sm">
+                                    <h2 class="mb-0">Certificat : conception site web avec HTML5 et CSS3</h2>
+                                    <h3 class="text-primary mb-">OpenClassrooms</h3>
+                                </div>
+                
+                                <div style="text-align: left;" class="m-3 text-center border shadow-sm">
+                                    <h2 class="mb-0">Certificat : Hacking Éthique</h2>
+                                    <h3 class="text-primary">Udemy</h3>
+                                    <h4>En cours</h4>
+                                </div>
+                
+                                <div style="text-align: left;" class="m-3 text-center border shadow-sm">
+                                    <h2 class="mb-0">Certificat : Windows Server Administration/English</h2>
+                                    <h3 class="text-primary">Udemy</h3>
+                                    <h4>En cours</h4>
+                                </div>
+                
+                                <div style="text-align: left;" class="m-3 text-center border shadow-sm">
+                                    <h2 class="mb-0">Certificat : Développeur Web</h2>
+                                    <h3 class="text-primary mb-">Udemy</h3>
+                                    <h4>En cours</h4>
+                                </div>
+                
+                                <div style="text-align: left;" class="m-3 text-center border shadow-sm">
+                                    <h2 class="mb-0">Micro-stage avec Bombardier : Python</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+                <!-- Section for work experience -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Expérience Professionnelle
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                            <div style="text-align: left;" class="m-3 text-center border shadow-sm">
+                                <h2 class="mb-0">Aide-caissier</h2>
+                                <h3 class="text-danger">Provigo du Plateau</h3>
+                                <h4>Février 2021</h4>
+                                <ul>
+                                    <li>Manipulation du système des caisses (automatique y compris)</li>
+                                    <li>Assurer la mise en place et la bonne marche de certains équipements</li>
+                                    <li>Assurer la formation adéquate des nouveaux employés</li>
+                                </ul>
+                            </div>
+                            <div style="text-align: left;" class="m-3 text-center border shadow-sm">
+                                <h2 class="mb-0">Assistant du cours Système d’Exploitation</h2>
+                                <h3 class="text-danger">Université du Québec en Outaouais</h3>
+                                <h4>Septembre 2022 - Décembre 2022</h4>
+                                <ul>
+                                    <li>Dispenser les cours de Travaux Dirigés</li>
+                                    <li>Correction des devoirs, projets et examens</li>
+                                    <li>Être disponible pour les questions des étudiants</li>
+                                </ul>
+                            </div>
+                
+
+                
+                        </div>
+                    </div>
+                </div>
+  
+                <!-- Section for skills -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Compétences
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-sm-6">
+                                    <h4>Systèmes d'exploitation</h4>
+                                    <ul>
+                                        <li>Windows Server</li>
+                                        <li>Linux (incluant la virtualisation)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4>Réseautage</h4>
+                                    <ul>
+                                        <li>Configuration Routeur</li>
+                                        <li>Commutateur</li>
+                                        <li>Pare-feu</li>
+                                        <li>Vlan</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4>Sécurité réseaux</h4>
+                                    <ul>
+                                        <li>Scanning/Failles réseaux et Web</li>
+                                        <li>Cryptographie</li>
+                                        <li>Malwares</li>
+                                    </ul>
+                                </div>
+                
+                                <div class="col-sm-6">
+                                    <h4>Gestion d'utilisateurs</h4>
+                                    <ul>
+                                        <li>Administration des comptes</li>
+                                        <li>Droits et accès</li>
+                                        <li>Active Directory</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4>Langages de programmation</h4>
+                                    <ul>
+                                        <li>Java</li>
+                                        <li>JavaScript</li>
+                                        <li>Python</li>
+                                        <li>Html/CSS</li>
+                                        <li>PHP</li>
+                                        <li>MySQL</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4>Développement Web</h4>
+                                    <ul>
+                                        <li>jQuery</li>
+                                        <li>Bootstrap</li>
+                                        <li>WordPress</li>
+                                        <li>React</li>
+                                        <li>Django</li>
+                                        <li>Springboot</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4>Modélisation</h4>
+                                    <ul>
+                                        <li>Cas d'utilisations</li>
+                                        <li>Modèles conceptuels</li>
+                                        <li>UML</li>
+                                        <li>Développement par test</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4>Base de données</h4>
+                                    <ul>
+                                        <li>Optimisation de requêtes</li>
+                                        <li>Sécurité des données</li>
+                                        <li>Bonne Modélisation</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4>Bureautique/Service client</h4>
+                                    <ul>
+                                        <li>Microsoft Word</li>
+                                        <li>Microsoft Excel</li>
+                                        <li>Microsoft PowerPoint</li>
+                                        <li>Suite Microsoft Office (Utilisation experte)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+                <!-- Section for qualities -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Qualités
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="qualities">
+                                <div class="quality">Esprit d'analyse</div>
+                                <div class="quality">Ambitieux</div>
+                                <div class="quality">Aimable</div>
+                                <div class="quality">Respect de la diversité et bonne Éthique</div>
+                                <div class="quality">Aime relever des défis</div>
+                                <div class="quality">Bonne résistance au stress</div>
+                                <div class="quality">Travail d'équipe</div>
+                                <div class="quality">Amour de l'apprentissage</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+        <!--parti de contact-->
+        <section class="contact container mb-5" id="contact" style="padding-top: 10em;">
+            <h2 class="text-center mb-5" style="font-weight: bold;">Prêt à rejoindre votre équipe. Contactez-moi !</h2>
+            <!-- Première rangée avec deux colonnes -->
+            <div class="row d-flex align-items-stretch" style="margin-top: 5em;">
+                <!-- Première colonne pour les réseaux sociaux -->
+                <div class="col text-center border" style="max-width: 560px;">
+                    <h2 class="mt-3">Mes réseaux sociaux</h2>
+                    <img class="illus" src="../../assets/social.png" alt="">
+                    <p>Vous pouvez également me contacter sur l'une des plateformes suivantes</p>
+                    <!-- Lien vers Instagram -->
+                    <a href="https://www.instagram.com/codingdel?igsh=MWkxODQ2a3oxcGxzcA%3D%3D&utm_source=qr"
+                        target="_blank">
+                        <p>Instagram</p>
+                        <img src="../../assets/inta1.png" alt="" class="rounded-circle">
+                    </a>
+                    <!-- Lien vers LinkedIn -->
+                    <a href="https://www.linkedin.com/in/kompaor%C3%A9-brunel-b58ba1236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_blank">
+                        <p>Linkedin</p>
+                        <img class="" src="../../assets/linkd.png" alt="">
+                    </a>
+                    <!-- Commenté : Lien vers GitHub -->
+                    <!--<a href="#" class="border p-2">
+                        <h3> GitHub</h3>
+                        <img src="../../assets/githubb.png" alt="" target="_blank">
+                    </a>-->
+                </div>
+                <!-- Deuxième colonne pour les informations de contact -->
+                <div class="col text-center border" id="contactcol"
+                    style="max-width: 560px;background-color: rgb(241, 241, 241);">
+                    <h2 class="mt-3 text-dark"> Contactez-moi</h2>
+                    <p class="text-danger">brunelkompaore0&#64;.gmail.com</p>
+                    <a href="mailto:brunelkompaore0@gmail.com">Envoyez-moi un e-mail</a>
+                    <img class=" mt-3 illus" src="../../assets/mail.png" alt="">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Scripts Bootstrap via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="projet.js"></script>
+</body>
+
+</html>
