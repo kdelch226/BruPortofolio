@@ -446,7 +446,7 @@ window.addEventListener("load", function () {
     resume.textContent = project.summary;
 
     let button = document.createElement('button');
-    button.classList.add('btn', 'btn-primary');
+    button.classList.add('btn', 'btn-danger');
     button.textContent = 'Voir plus';
     button.setAttribute('data-bs-toggle', 'modal');
     let htmlid = '#' + projectId;

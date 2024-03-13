@@ -129,25 +129,33 @@ pre{
   .parcours  .quality {
     margin-right: 10px; /* Espacement horizontal entre chaque élément */
     margin-bottom: 10px; /* Espacement vertical entre chaque élément */
-    border: 1px solid black;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.125); /* Couleur de la bordure */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Ombre portée */
     padding: 5px;
   }
   
   .parcours  .quality:hover{
-    background-color: rgb(0, 34, 255);
+    background-color: #dc3546;
+    transition: all 1.5s;
   }
 
 
   .parcours .col-sm-6{
     margin-right: 10px; /* Espacement horizontal entre chaque élément */
     margin-bottom: 10px; /* Espacement vertical entre chaque élément */
-    border: 1px solid black;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.125); /* Couleur de la bordure */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Ombre portée */
     padding: 5px;
     max-width: 30%;
     min-width: 250px;
 }
+
+.parcours .col-sm-6:hover{
+    background-color: #dc3546;
+    transition: all 1.5s;
+}
+
+
 
 
 /*page de contact*/
@@ -168,7 +176,8 @@ pre{
 
 /* Effet hover sur les liens */
 .contact a:hover {
-    background-color: #dc3545;
+    background-color: #dc3546;
+    transition: all 1.5s;
 }
 
 /* Style pour les images à l'intérieur des liens */
