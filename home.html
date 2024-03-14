@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
     <title>BrunelCV</title>
     <link rel="stylesheet" href="home.css">
     <link rel="icon" type="image/x-icon" href="/assets/iconecv.ico">
@@ -81,10 +82,10 @@
                 </div>
             </div>
 
-            <div class="container mt-5 mb-5">
+            <div class="container p-4 mt-5 mb-5">
                 <div class="row">
                     <!-- Colonne 1 -->
-                    <div class="col-lg shadow border m-1 mx-3 mt-3"
+                    <div class="col-lg shadow border mt-3"
                         style="max-width: 690px;background-color: rgb(241, 241, 241); min-width: 200px;">
                         <!-- Contenu de la première colonne -->
                         <div class="text-center">
@@ -106,7 +107,7 @@
                     </div>
 
                     <!-- Colonne 2 -->
-                    <div class="col-md text-center shadow border m-1 mx-3 mt-3"
+                    <div class="col-lg text-center shadow border mt-3 "
                         style="max-width: 690px;background-color: rgb(241, 241, 241); min-width: 200px;">
                         <!-- Contenu de la deuxième colonne -->
                         <div class="text-center projrecent" id="projetrecent">
@@ -126,7 +127,7 @@
         <section id="projets" class="container-fluid" style="padding-top: 10em; ">
             <h2 class="text-center" style="font-weight: bold;">Explorez Mes Projets Passionnants</h2>
 
-            <div id="projectscontainer" class="row d-flex justify-content-center mt-5"></div>
+            <div id="projectscontainer" class="row d-flex justify-content-center mt-5 "></div>
 
         </section>
 
@@ -136,238 +137,248 @@
 
 
 
-    <!-- Partie parcours -->
-    <section class="parcours" id="parcours" style="padding-top: 10em;">
-        <h2 class="text-center mb-5" style="font-weight: bold;">Découvrez mon parcours</h2>
-        <!-- Section contenant les images en haut de la page -->
-        <div class="container-fluid">
-            <img src="../../assets/parcours1.png" alt="">
-            <img src="../../assets/parcours2.png" alt="">
-            <img src="../../assets/parcours3.png" alt="">
-        </div>
-  
-        <!-- Section principale contenant les informations sur l'éducation, l'expérience professionnelle, les compétences et les qualités -->
-        <div class="container text-center mt-5 mb-5" style="max-width: 1000px;">
-            <!-- Utilisation de l'élément Accordion pour organiser les différentes sections -->
-            <div class="accordion" id="accordionExample">
-                <!-- Section for education -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Éducation
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div style="text-align: left;">
-                                <div style="text-align: left;" class="m-3 text-center border shadow-sm accordion-article-item">
-                                    <h2 class="mb-0">Baccalauréat en Informatique</h2>
-                                    <h3 class="text-danger">Université du Québec en Outaouais (UQO)</h3>
-                                    <h4>Janvier 2020 - Avril 2023</h4>
-                                </div>
+        <!-- Partie parcours -->
+        <section class="parcours" id="parcours" style="padding-top: 10em;">
+            <h2 class="text-center mb-5" style="font-weight: bold;">Découvrez mon parcours</h2>
+            <!-- Section contenant les images en haut de la page -->
+            <div class="container-fluid">
+                <img src="../../assets/parcours1.png" alt="">
+                <img src="../../assets/parcours2.png" alt="">
+                <img src="../../assets/parcours3.png" alt="">
+            </div>
 
-                                <div style="text-align: left;" class="m-3 text-center border shadow-sm accordion-article-item">
-                                    <h2 class="mb-0">Certificat : angular</h2>
-                                    <h3 class="text-danger mb-">OpenClassrooms</h3>
-                                </div>
+            <!-- Section principale contenant les informations sur l'éducation, l'expérience professionnelle, les compétences et les qualités -->
+            <div class="container text-center mt-5 mb-5" style="max-width: 1000px;">
+                <!-- Utilisation de l'élément Accordion pour organiser les différentes sections -->
+                <div class="accordion" id="accordionExample">
+                    <!-- Section for education -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Éducation
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div style="text-align: left;">
+                                    <div style="text-align: left;"
+                                        class="m-3 text-center border shadow-sm accordion-article-item">
+                                        <h2 class="mb-0">Baccalauréat en Informatique</h2>
+                                        <h3 class="text-danger">Université du Québec en Outaouais (UQO)</h3>
+                                        <h4>Janvier 2020 - Avril 2023</h4>
+                                    </div>
 
-                                <div style="text-align: left;" class="m-3 text-center border shadow-sm accordion-article-item">
-                                    <h2 class="mb-0">Certificat : conception base de données relationnelles</h2>
-                                    <h3 class="text-danger mb-">OpenClassrooms</h3>
-                                </div>
+                                    <div style="text-align: left;"
+                                        class="m-3 text-center border shadow-sm accordion-article-item">
+                                        <h2 class="mb-0">  angular</h2>
+                                        <h3 class="text-danger mb-">OpenClassrooms</h3>
+                                    </div>
 
-                                <div style="text-align: left;" class="m-3 text-center border shadow-sm accordion-article-item">
-                                    <h2 class="mb-0">Certificat : conception site web HTML/CSS</h2>
-                                    <h3 class="text-danger mb-">OpenClassrooms</h3>
-                                </div>
-                
-                                <div style="text-align: left;" class="m-3 text-center border shadow-sm accordion-article-item">
-                                    <h2 class="mb-0">Certificat : Hacking Éthique</h2>
-                                    <h3 class="text-danger">Udemy</h3>
-                                </div>
-                
-                                <div style="text-align: left;" class="m-3 text-center border shadow-sm accordion-article-item">
-                                    <h2 class="mb-0">Certificat : Windows Server Administration</h2>
-                                    <h3 class="text-danger">Udemy English</h3>
-                                </div>
-                
-                                <div style="text-align: left;" class="m-3 text-center border shadow-sm accordion-article-item">
-                                    <h2 class="mb-0">Certificat : Développeur Web</h2>
-                                    <h3 class="text-danger mb-">Udemy</h3>
-                                </div>
-                
-                                <div style="text-align: left;" class="m-3 text-center border shadow-sm accordion-article-item">
-                                    <h2 class="mb-0">Micro-stage : Python</h2>
-                                    <h3 class="text-danger mb-">Bombardier</h3>
+                                    <div style="text-align: left;"
+                                        class="m-3 text-center border shadow-sm accordion-article-item">
+                                        <h2 class="mb-0">  conception base de données relationnelles</h2>
+                                        <h3 class="text-danger mb-">OpenClassrooms</h3>
+                                    </div>
+
+                                    <div style="text-align: left;"
+                                        class="m-3 text-center border shadow-sm accordion-article-item">
+                                        <h2 class="mb-0">  conception site web HTML/CSS</h2>
+                                        <h3 class="text-danger mb-">OpenClassrooms</h3>
+                                    </div>
+
+                                    <div style="text-align: left;"
+                                        class="m-3 text-center border shadow-sm accordion-article-item">
+                                        <h2 class="mb-0">  Hacking Éthique</h2>
+                                        <h3 class="text-danger">Udemy</h3>
+                                    </div>
+
+                                    <div style="text-align: left;"
+                                        class="m-3 text-center border shadow-sm accordion-article-item">
+                                        <h2 class="mb-0">  Windows Server Administration</h2>
+                                        <h3 class="text-danger">Udemy English</h3>
+                                    </div>
+
+                                    <div style="text-align: left;"
+                                        class="m-3 text-center border shadow-sm accordion-article-item">
+                                        <h2 class="mb-0">  Développeur Web</h2>
+                                        <h3 class="text-danger mb-">Udemy</h3>
+                                    </div>
+
+                                    <div style="text-align: left;"
+                                        class="m-3 text-center border shadow-sm accordion-article-item">
+                                        <h2 class="mb-0">Micro-stage : Python</h2>
+                                        <h3 class="text-danger mb-">Bombardier</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-  
-                <!-- Section for work experience -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Expérience Professionnelle
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
 
-                            <div style="text-align: left;" class="m-3 text-center border shadow-sm accordion-article-item">
-                                <h2 class="mb-0">Aide-caissier</h2>
-                                <h3 class="text-danger">Provigo du Plateau</h3>
-                                <h4>Février 2021</h4>
-                                <ul>
-                                    <li>Manipulation du système des caisses (automatique y compris)</li>
-                                    <li>Assurer la mise en place et la bonne marche de certains équipements</li>
-                                    <li>Assurer la formation adéquate des nouveaux employés</li>
-                                </ul>
-                            </div>
-                            <div style="text-align: left;" class="m-3 text-center border shadow-sm accordion-article-item">
-                                <h2 class="mb-0">Assistant du cours Système d’Exploitation</h2>
-                                <h3 class="text-danger">Université du Québec en Outaouais</h3>
-                                <h4>Septembre 2022 - Décembre 2022</h4>
-                                <ul>
-                                    <li>Dispenser les cours de Travaux Dirigés</li>
-                                    <li>Correction des devoirs, projets et examens</li>
-                                    <li>Être disponible pour les questions des étudiants</li>
-                                </ul>
-                            </div>                
-                        </div>
-                    </div>
-                </div>
-  
-                <!-- Section for skills -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Compétences
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="row d-flex justify-content-center">
-                                <div class="col-sm-6">
-                                    <h4>Systèmes d'exploitation</h4>
+                    <!-- Section for work experience -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Expérience Professionnelle
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+
+                                <div style="text-align: left;"
+                                    class="m-3 text-center border shadow-sm accordion-article-item">
+                                    <h2 class="mb-0">Aide-caissier</h2>
+                                    <h3 class="text-danger">Provigo du Plateau</h3>
+                                    <h4>Février 2021</h4>
                                     <ul>
-                                        <li>Windows Server</li>
-                                        <li>Linux (incluant la virtualisation)</li>
+                                        <li>Manipulation du système des caisses (automatique y compris)</li>
+                                        <li>Assurer la mise en place et la bonne marche de certains équipements</li>
+                                        <li>Assurer la formation adéquate des nouveaux employés</li>
                                     </ul>
                                 </div>
-                                <div class="col-sm-6">
-                                    <h4>Réseautage</h4>
+                                <div style="text-align: left;"
+                                    class="m-3 text-center border shadow-sm accordion-article-item">
+                                    <h2 class="mb-0">Assistant du cours Système d’Exploitation</h2>
+                                    <h3 class="text-danger">Université du Québec en Outaouais</h3>
+                                    <h4>Septembre 2022 - Décembre 2022</h4>
                                     <ul>
-                                        <li>Configuration Routeur</li>
-                                        <li>Commutateur</li>
-                                        <li>Pare-feu</li>
-                                        <li>Vlan</li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h4>Sécurité réseaux</h4>
-                                    <ul>
-                                        <li>Scanning/Failles réseaux et Web</li>
-                                        <li>Cryptographie</li>
-                                        <li>Malwares</li>
-                                    </ul>
-                                </div>
-                
-                                <div class="col-sm-6">
-                                    <h4>Gestion d'utilisateurs</h4>
-                                    <ul>
-                                        <li>Administration des comptes</li>
-                                        <li>Droits et accès</li>
-                                        <li>Active Directory</li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h4>Langages de programmation</h4>
-                                    <ul>
-                                        <li>Java</li>
-                                        <li>JavaScript</li>
-                                        <li>Python</li>
-                                        <li>Html/CSS</li>
-                                        <li>PHP</li>
-                                        <li>MySQL</li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h4>Développement Web</h4>
-                                    <ul>
-                                        <li>jQuery</li>
-                                        <li>Bootstrap</li>
-                                        <li>WordPress</li>
-                                        <li>React</li>
-                                        <li>Django</li>
-                                        <li>Springboot</li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h4>Modélisation</h4>
-                                    <ul>
-                                        <li>Cas d'utilisations</li>
-                                        <li>Modèles conceptuels</li>
-                                        <li>UML</li>
-                                        <li>Développement par test</li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h4>Base de données</h4>
-                                    <ul>
-                                        <li>Optimisation de requêtes</li>
-                                        <li>Sécurité des données</li>
-                                        <li>Bonne Modélisation</li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h4>Bureautique/Service client</h4>
-                                    <ul>
-                                        <li>Microsoft Word</li>
-                                        <li>Microsoft Excel</li>
-                                        <li>Microsoft PowerPoint</li>
-                                        <li>Suite Microsoft Office (Utilisation experte)</li>
+                                        <li>Dispenser les cours de Travaux Dirigés</li>
+                                        <li>Correction des devoirs, projets et examens</li>
+                                        <li>Être disponible pour les questions des étudiants</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-  
-                <!-- Section for qualities -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Qualités
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="qualities">
-                                <div class="quality">Esprit d'analyse</div>
-                                <div class="quality">Ambitieux</div>
-                                <div class="quality">Aimable</div>
-                                <div class="quality">Respect de la diversité et bonne Éthique</div>
-                                <div class="quality">Aime relever des défis</div>
-                                <div class="quality">Bonne résistance au stress</div>
-                                <div class="quality">Travail d'équipe</div>
-                                <div class="quality">Amour de l'apprentissage</div>
+
+                    <!-- Section for skills -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Compétences
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-sm-6">
+                                        <h4>Systèmes d'exploitation</h4>
+                                        <ul>
+                                            <li>Windows Server</li>
+                                            <li>Linux (incluant la virtualisation)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h4>Réseautage</h4>
+                                        <ul>
+                                            <li>Configuration Routeur</li>
+                                            <li>Commutateur</li>
+                                            <li>Pare-feu</li>
+                                            <li>Vlan</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h4>Sécurité réseaux</h4>
+                                        <ul>
+                                            <li>Scanning/Failles réseaux et Web</li>
+                                            <li>Cryptographie</li>
+                                            <li>Malwares</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <h4>Gestion d'utilisateurs</h4>
+                                        <ul>
+                                            <li>Administration des comptes</li>
+                                            <li>Droits et accès</li>
+                                            <li>Active Directory</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h4>Langages de programmation</h4>
+                                        <ul>
+                                            <li>Java</li>
+                                            <li>JavaScript</li>
+                                            <li>Python</li>
+                                            <li>Html/CSS</li>
+                                            <li>PHP</li>
+                                            <li>MySQL</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h4>Développement Web</h4>
+                                        <ul>
+                                            <li>jQuery</li>
+                                            <li>Bootstrap</li>
+                                            <li>WordPress</li>
+                                            <li>React</li>
+                                            <li>Django</li>
+                                            <li>Springboot</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h4>Modélisation</h4>
+                                        <ul>
+                                            <li>Cas d'utilisations</li>
+                                            <li>Modèles conceptuels</li>
+                                            <li>UML</li>
+                                            <li>Développement par test</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h4>Base de données</h4>
+                                        <ul>
+                                            <li>Optimisation de requêtes</li>
+                                            <li>Sécurité des données</li>
+                                            <li>Bonne Modélisation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h4>Bureautique/Service client</h4>
+                                        <ul>
+                                            <li>Microsoft Word</li>
+                                            <li>Microsoft Excel</li>
+                                            <li>Microsoft PowerPoint</li>
+                                            <li>Suite Microsoft Office (Utilisation experte)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section for qualities -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Qualités
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="qualities">
+                                    <div class="quality">Esprit d'analyse</div>
+                                    <div class="quality">Ambitieux</div>
+                                    <div class="quality">Aimable</div>
+                                    <div class="quality">Respect de la diversité et bonne Éthique</div>
+                                    <div class="quality">Aime relever des défis</div>
+                                    <div class="quality">Bonne résistance au stress</div>
+                                    <div class="quality">Travail d'équipe</div>
+                                    <div class="quality">Amour de l'apprentissage</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
 
@@ -379,7 +390,7 @@
             <!-- Première rangée avec deux colonnes -->
             <div class="row d-flex align-items-stretch" style="margin-top: 5em;">
                 <!-- Première colonne pour les réseaux sociaux -->
-                <div class="col text-center border" style="max-width: 560px;">
+                <div class="col text-center border" >
                     <h2 class="mt-3">Mes réseaux sociaux</h2>
                     <img class="illus" src="../../assets/social.png" alt="">
                     <p>Vous pouvez également me contacter sur l'une des plateformes suivantes</p>
@@ -403,7 +414,7 @@
                 </div>
                 <!-- Deuxième colonne pour les informations de contact -->
                 <div class="col text-center border" id="contactcol"
-                    style="max-width: 560px;background-color: rgb(241, 241, 241);">
+                    style="background-color: rgb(241, 241, 241);">
                     <h2 class="mt-3 text-dark"> Contactez-moi</h2>
                     <p class="text-danger">brunelkompaore0&#64;.gmail.com</p>
                     <a href="mailto:brunelkompaore0@gmail.com">Envoyez-moi un e-mail</a>
@@ -417,6 +428,40 @@
     <!-- Scripts Bootstrap via CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="projet.js"></script>
+
+    <script>
+        // Sélection des liens internes
+        var internalLinks = document.querySelectorAll('a.nav-link');
+
+        // Options pour Intersection Observer
+        var options = {
+            threshold: 0.5 // Déclenché lorsque la moitié de l'élément est visible
+        };
+
+        // Création de l'observateur d'intersection
+        var observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                // Si l'élément est visible à l'écran
+                if (entry.isIntersecting) {
+                    // Ajouter une classe aux liens internes correspondants
+                    internalLinks.forEach(link => {
+                        if (link.hash === `#${entry.target.id}`) {
+                            link.classList.add('visible-link');
+                        } else {
+                            link.classList.remove('visible-link');
+                        }
+                    });
+
+                    console.log(entry.target.id);
+                }
+            });
+        }, options);
+
+        // Observer chaque section
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 
 </html>

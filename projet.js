@@ -101,7 +101,9 @@ var projets = [
     id: 2,
     name: 'Site web Portfolio',
     summary: 'Un site web presentant les compétences, les travaux et le parcours professionnel',
-    description: "--Introduction:\n" +
+    description: "Il y a 2 versions de ce projet une avec Angular et une simplement avec JavaScript \n"
+    + "Celle avec angular a eu des problement de mise en hebergement\n\n"
+    + "--Introduction:\n" +
       "Ce rapport documente le processus de développement de mon portefeuille personnel, un projet conçu pour mettre en valeur mes compétences en développement, mon expérience et les projets scolaires et personnels que j'ai réalisés. Développé avec Angular, TypeScript et Bootstrap, ce portefeuille vise à présenter de manière claire et interactive mes réalisations antérieures et mon parcours professionnel.\n\n" +
       "--Méthodologie Agile en Développement Solo:\n" +
       "Malgré le développement en solo, j'ai opté pour la méthodologie Agile pour sa flexibilité et sa capacité à s'adapter aux changements. J'ai appliqué les principes Agile en décomposant le projet en tâches plus petites et en livrant des versions itératives du portefeuille. Cette approche m'a permis de recueillir rapidement des retours d'utilisateurs et d'ajuster le développement en conséquence.\n\n" +
@@ -404,18 +406,18 @@ var projets = [
 
 window.addEventListener("load", function () {
 
-  let projrecenthtml = document.getElementById('projetrecent');
-  let projrecentId = Math.floor(Math.random() * 2);
+  var projrecenthtml = document.getElementById('projetrecent');
+  var projrecentId = Math.floor(Math.random() * 2);
   console.log(projrecentId);
-  let projrecent = projets[projrecentId];
+  var projrecent = projets[projrecentId];
 
-  let projrecentname = document.createElement('h4');
+  var projrecentname = document.createElement('h4');
   projrecentname.textContent = projrecent.name;
 
-  let projetrecentpicture = document.createElement('img');
+  var projetrecentpicture = document.createElement('img');
   projetrecentpicture.src = projrecent.pictures[0];
 
-  let projrecentresume = document.createElement('p');
+  var projrecentresume = document.createElement('p');
   projrecentresume.textContent = projrecent.summary;
 
   projrecenthtml.appendChild(projrecentname);
@@ -429,44 +431,40 @@ window.addEventListener("load", function () {
 
 
     /** creation des card de projet  */
-    let projectId = creatid(project.id);
+    var projectId = creatid(project.id);
 
-    let projectCard = document.createElement('div');
+    var projectCard = document.createElement('div');
     projectCard.classList.add('card', 'text-center', 'shadow', 'mx-3', 'col-lg-6', 'col-md-6', 'mb-5');
 
-    let cardBody = document.createElement('div');
+    var cardBody = document.createElement('div');
     cardBody.classList.add('card-body');
 
-    let title = document.createElement('h5');
+    var title = document.createElement('h5');
     title.classList.add('card-title');
     title.textContent = project.name;
 
-    let resume = document.createElement('p');
+    var resume = document.createElement('p');
     resume.classList.add('card-text');
     resume.textContent = project.summary;
 
-    let button = document.createElement('button');
+    var button = document.createElement('button');
+    button.setAttribute('type', 'button');
     button.classList.add('btn', 'btn-danger');
-    button.textContent = 'Voir plus';
     button.setAttribute('data-bs-toggle', 'modal');
-    let htmlid = '#' + projectId;
+    var htmlid = '#' + projectId;
     button.setAttribute('data-bs-target', htmlid);
+    button.textContent = 'Voir plus';
 
-    button.addEventListener('click', function () {
-      let modal = document.querySelector(htmlid);
-      let modalInstance = new bootstrap.Modal(modal);
-      modalInstance.show();
-    });
 
-    let cardFooter = document.createElement('div');
+    var cardFooter = document.createElement('div');
     cardFooter.classList.add('card-footer', 'bg-transparent', 'border-dark', 'text-center');
 
-    let techContainer = document.createElement('div');
+    var techContainer = document.createElement('div');
     techContainer.classList.add('d-flex', 'justify-content-center');
 
     /** creation des representation de technologie */
     project.tech.forEach(tech => {
-      let techElement = document.createElement('div');
+      var techElement = document.createElement('div');
       techElement.classList.add('tech', 'me-2', 'mb-1');
       techElement.style.backgroundColor = tech.color;
       techElement.textContent = tech.key;
@@ -475,45 +473,61 @@ window.addEventListener("load", function () {
 
 
     /** création du modal pour chaque projet */
-    let modal = document.createElement('div');
+    var modal = document.createElement('div');
     modal.classList.add('modal', 'fade');
     modal.id = projectId;
     modal.setAttribute('tabindex', '-1');
+    modal.setAttribute('aria-labelledby', projectId);
     modal.setAttribute('aria-hidden', 'true');
 
-    let modalDialog = document.createElement('div');
+    
+
+
+    var modalDialog = document.createElement('div');
     modalDialog.classList.add('modal-dialog', 'modal-lg');
 
-    let modalContent = document.createElement('div');
+    var modalContent = document.createElement('div');
     modalContent.classList.add('modal-content');
 
-    let modalHeader = document.createElement('div');
+    var modalHeader = document.createElement('div');
     modalHeader.classList.add('modal-header');
-    modalHeader.innerHTML = '<h5 class="modal-title">'+project.name+'</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>';
 
-    let modalBody = document.createElement('div');
+    var modaltitle = document.createElement('h5');
+    modaltitle.classList.add('modal-title','fs-5');
+    modaltitle.textContent=project.name;
+
+    var modalbutton= document.createElement('button');
+    modalbutton.classList.add('btn-close');
+    modalbutton.setAttribute('data-bs-dismiss','modal');
+    modalbutton.setAttribute('aria-label','Close');
+
+    modalHeader.appendChild(modaltitle);
+    modalHeader.appendChild(modalbutton);
+
+
+    var modalBody = document.createElement('div');
     modalBody.classList.add('modal-body');
-    let img = document.createElement('img');
+    var img = document.createElement('img');
     img.src = project.pictures.length ? project.pictures[0] : 'assets/indisponible.png';
     img.classList.add('img-fluid', 'mb-3');
-    let description = document.createElement('pre');
+    var description = document.createElement('pre');
     description.textContent = project.description;
     modalBody.appendChild(img);
     modalBody.appendChild(description);
 
-    let techContainermodal = document.createElement('div');
+    var techContainermodal = document.createElement('div');
     techContainermodal.classList.add('d-flex', 'justify-content-center');
 
     /** creation des representation de technologie pour le modal*/
     project.tech.forEach(tech => {
-      let techElement = document.createElement('div');
+      var techElement = document.createElement('div');
       techElement.classList.add('tech', 'mb-1','me-2');
       techElement.style.backgroundColor = tech.color;
       techElement.textContent = tech.key;
       techContainermodal.appendChild(techElement);
     });
 
-    let modalFooter = document.createElement('div');
+    var modalFooter = document.createElement('div');
     modalFooter.classList.add('modal-footer', 'bg-transparent', 'border-dark', 'text-center','justify-content-center');
     modalFooter.appendChild(techContainermodal);
 
@@ -538,7 +552,7 @@ window.addEventListener("load", function () {
 
   function creatid(id) {
     text = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let a = text.substring(id, id + 1);
+    var a = text.substring(id, id + 1);
     return a;
   }
 

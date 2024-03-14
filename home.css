@@ -1,6 +1,7 @@
 /* Définition d'une taille de police de base pour tous les éléments */
 * {
     font-size: 1em;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Styles pour la barre de navigation */
@@ -23,7 +24,7 @@
     z-index: 999;
 }
 
-.navbar a:hover, .link-active{
+.navbar a:hover, .visible-link{
     color: #dc3545;
     border-bottom:1px solid #dc3545 ;
 }
@@ -40,7 +41,7 @@
 }
 
 /* Styles pour les colonnes */
-.acceuil .col {
+.acceuil .col-lg {
     border-radius: 10px; /* Bordures arrondies */
 }
 
@@ -84,7 +85,9 @@ font-weight: bold;
 
 .card{
     max-width: 380px;
-    min-width: 380px;
+    min-width: 280px;
+    border-radius: 10px; /* Bordures arrondies */
+
 }
 
 pre{
@@ -118,8 +121,13 @@ pre{
     max-height: 200px;
 }
 
+.accordion-article-item{
+    border-radius: 10px; /* Bordures arrondies */
+}
+
 .parcours li {
     list-style: none;
+    
 }
 
 
@@ -135,12 +143,13 @@ pre{
     border: 1px solid rgba(0, 0, 0, 0.125); /* Couleur de la bordure */
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Ombre portée */
     padding: 5px;
+    border-radius: 10px; /* Bordures arrondies */
+
   }
   
   .parcours  .quality:hover,.accordion-article-item:hover,.parcours .col-sm-6:hover,.contact a:hover,.card:hover{
-    background-color: #60000a;
+    background-color: rgb(203, 203, 203);
     transition: all 1s;
-    color: #ffffff;
   }
 
 
@@ -152,6 +161,7 @@ pre{
     padding: 5px;
     max-width: 30%;
     min-width: 250px;
+    border-radius: 10px; /* Bordures arrondies */
 }
 
 
@@ -194,6 +204,9 @@ pre{
 .contact .col {
     padding: 20px;
     border-radius: 10px;
+    max-width: 560px;
+    margin: 20px 20px;
+
 }
 
 /* Style pour les rangées */
@@ -210,5 +223,17 @@ pre{
     justify-content: space-between;
     align-items: center;
 }
+
+
+@media screen and (max-width:415px) {
+
+    .card{
+        max-width: 350px;
+        min-width: 280px;
+    }
+
+
+}
+
 
 
