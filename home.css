@@ -69,33 +69,6 @@
 
 
 
-/*---------------------------------------------------------------------------*/
-/*page de realisation*/
-.tech{
-    border-radius: 25px;
-    color: #ffffff;
-    line-height: 30px;
-    width: fit-content;
-    height: 30px;
-    padding: 0 15px;
-}
-.card-title{
-font-weight: bold;
-}
-
-.card{
-    max-width: 380px;
-    min-width: 280px;
-    border-radius: 10px; /* Bordures arrondies */
-
-}
-
-pre{
-    white-space: pre-wrap; /* Activer le retour à la ligne automatique */
-    font-family: 'Roboto', sans-serif;
-}
-
-
 
 
 /*page de parcours*/
@@ -227,11 +200,10 @@ pre{
 
 @media screen and (max-width:415px) {
 
-    .card{
-        max-width: 350px;
-        min-width: 280px;
-    }
 
+    .contact .col {
+        max-width: 350px;
+    }
 
 }
 
