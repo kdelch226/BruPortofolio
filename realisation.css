@@ -22,6 +22,8 @@
     top: 0;
     /* Empilement au-dessus des autres éléments */
     z-index: 999;
+    animation: fadeInDown 2s both;
+
 }
 
 .navbar a:hover {
@@ -51,7 +53,12 @@ font-weight: bold;
     max-width: 380px;
     min-width: 280px;
     border-radius: 10px; /* Bordures arrondies */
+    animation: fadeInDown 2s both;
 
+}
+
+.fade{
+    animation: fadeInDown 2s both;
 }
 
 pre{
@@ -71,5 +78,29 @@ pre{
     .card{
         max-width: 350px;
         min-width: 280px;
+        animation: fadeInRigth 2s both;
     }
+
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInRigth {
+	from {
+		opacity: 0;
+		transform: translate3d(-20%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }

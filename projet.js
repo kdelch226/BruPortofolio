@@ -165,13 +165,17 @@ window.addEventListener("load", function() {
   const projectsContainer = document.getElementById('projectscontainer');
 
   // Parcourir tous les projets
-  projets.forEach(project=>{
+  for(let i=0;i<projets.length;i++){
 
+    var project=projets[i];
       /** creation des card de projet  */
       var projectId = creatid(project.id);
 
       var projectCard = document.createElement('div');
       projectCard.classList.add('card', 'text-center', 'shadow', 'mx-3', 'col-lg-6', 'col-md-6', 'mb-5');
+
+      var animationDelay= i*0.2;
+      projectCard.style.animationDelay = `${animationDelay}s`;
 
       var cardBody = document.createElement('div');
       cardBody.classList.add('card-body');
@@ -288,8 +292,7 @@ window.addEventListener("load", function() {
 
 
       
-  }
-  );
+  };
 
   function creatid(id) {
       text = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
