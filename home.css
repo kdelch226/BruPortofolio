@@ -93,6 +93,9 @@
     max-width: 250px;
     max-height: 200px;
 }
+.accordion-special .accordion-article-item{
+    background-color: rgb(246, 246, 246);
+}
 
 .accordion-article-item{
     border-radius: 10px; /* Bordures arrondies */
@@ -103,21 +106,33 @@
     
 }
 
+.accordion-body img{
+    width: 5vw;
+    max-width: 30px;
+}
 
+.accordion img{
+    width: 5vw;
+    max-width: 30px;
+    margin-right: 50px;
+}
 
 .parcours .qualities {
     display: flex;
     flex-wrap: wrap; /* Force le retour à la ligne des éléments */
   }
   
-  .parcours  .quality {
+  .parcours  .quality , .skillss li{
     margin-right: 10px; /* Espacement horizontal entre chaque élément */
     margin-bottom: 10px; /* Espacement vertical entre chaque élément */
     border: 1px solid rgba(0, 0, 0, 0.125); /* Couleur de la bordure */
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Ombre portée */
-    padding: 5px;
-    border-radius: 10px; /* Bordures arrondies */
+    background-color: rgb(238, 238, 238);
+  }
 
+  .quality{
+    padding: 5px;
+    border-radius: 10px;
   }
   
   .parcours  .quality:hover,.accordion-article-item:hover,.parcours .col-sm-6:hover,.contact a:hover,.card:hover{
