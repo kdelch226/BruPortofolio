@@ -22,6 +22,8 @@
     top: 0;
     /* Empilement au-dessus des autres éléments */
     z-index: 999;
+    animation: fadeInDown 2s both;
+
 }
 
 .navbar a:hover, .visible-link{
@@ -43,6 +45,17 @@
 /* Styles pour les colonnes */
 .acceuil .col-lg {
     border-radius: 10px; /* Bordures arrondies */
+
+}
+
+.acceuil .col1, .banniere_text .btn-danger{
+    animation: fadeInRigth 2s both;
+
+}
+
+.acceuil .col2, .banniere_text .btn-info{
+    animation: fadeInLeft 2s both;
+
 }
 
 /* Styles pour le conteneur fluide */
@@ -220,6 +233,39 @@
         max-width: 350px;
     }
 
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInRigth {
+	from {
+		opacity: 0;
+		transform: translate3d(-40%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInLeft {
+	from {
+		opacity: 0;
+		transform: translate3d(40%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
 
 
